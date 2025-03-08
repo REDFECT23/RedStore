@@ -14,7 +14,8 @@
             <a href="/" class="logo">RedStore</a>
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
+                    <li class="nav__item"><a href="/" class="nav__link">Главная</a></li>
+                    <li class="nav__item"><a href="/catalog.html" class="nav__link">Каталог</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
                 </ul>
@@ -32,7 +33,7 @@
                 <div class="hero__content">
                     <h1 class="hero__title">Найдите идеальное украшение <br> для вашего сайта</h1>
                     <p class="hero__description">Эксклюзивные дополнения и украшения, которые подчеркнут индивидуальность вашего онлайн-проекта.</p>
-                    <a href="#" class="button button--primary">Смотреть каталог</a>
+                    <a href="/catalog.html" class="button button--primary">Смотреть каталог</a>
                 </div>
                 <div class="hero__image">
                     <img src="assets/img/hero-placeholder.png" alt="Placeholder Hero Image"> <!-- Замените на подходящее изображение -->
@@ -44,30 +45,7 @@
             <div class="container featured-categories__container">
                 <h2 class="section-title">Популярные категории</h2>
                 <ul class="categories-list">
-                    <li class="category-item">
-                        <a href="#" class="category-link">
-                            <img src="assets/img/category-placeholder.png" alt="Placeholder Category Image"> <!-- Замените на изображения категорий -->
-                            <span class="category-name">Виджеты</span>
-                        </a>
-                    </li>
-                    <li class="category-item">
-                        <a href="#" class="category-link">
-                            <img src="assets/img/category-placeholder.png" alt="Placeholder Category Image">
-                            <span class="category-name">Иконки</span>
-                        </a>
-                    </li>
-                    <li class="category-item">
-                        <a href="#" class="category-link">
-                            <img src="assets/img/category-placeholder.png" alt="Placeholder Category Image">
-                            <span class="category-name">Шаблоны</span>
-                        </a>
-                    </li>
-                    <li class="category-item">
-                        <a href="#" class="category-link">
-                            <img src="assets/img/category-placeholder.png" alt="Placeholder Category Image">
-                            <span class="category-name">Плагины</span>
-                        </a>
-                    </li>
+                    <!-- Категории будут загружены из JS -->
                 </ul>
             </div>
         </section>
@@ -75,30 +53,9 @@
         <section class="new-arrivals">
             <div class="container new-arrivals__container">
                 <h2 class="section-title">Новинки</h2>
-                <div class="products-grid">
-                    <!-- Здесь будут карточки товаров (добавим динамически позже) -->
-                    <div class="product-card">
-                        <a href="#" class="product-card__link">
-                            <img src="assets/img/product-placeholder.png" alt="Placeholder Product Image" class="product-card__image">
-                            <h3 class="product-card__title">Название товара</h3>
-                            <p class="product-card__price">$XX.XX</p>
-                        </a>
-                    </div>
-                    <div class="product-card">
-                        <a href="#" class="product-card__link">
-                            <img src="assets/img/product-placeholder.png" alt="Placeholder Product Image" class="product-card__image">
-                            <h3 class="product-card__title">Название товара</h3>
-                            <p class="product-card__price">$YY.YY</p>
-                        </a>
-                    </div>
-                    <div class="product-card">
-                        <a href="#" class="product-card__link">
-                            <img src="assets/img/product-placeholder.png" alt="Placeholder Product Image" class="product-card__image">
-                            <h3 class="product-card__title">Название товара</h3>
-                            <p class="product-card__price">$ZZ.ZZ</p>
-                        </a>
-                    </div>
-                    <!-- ... и так далее -->
+                <div class="products-grid" id="homepage-products-grid"> <!-- Добавил id для JS -->
+                    <!-- Товары будут загружены из JS -->
+                    <div class="loading-message">Загрузка новинок...</div>
                 </div>
             </div>
         </section>
@@ -128,4 +85,4 @@
 
     <script src="assets/js/main.js"></script>
 </body>
-                                            </html>
+</html>
