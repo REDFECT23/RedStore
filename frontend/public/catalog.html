@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог - RedStore</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <a href="/" class="logo">RedStore</a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="/" class="nav__link">Главная</a></li>
+                    <li class="nav__item"><a href="/catalog.html" class="nav__link nav__link--active">Каталог</a></li> <!-- Активная ссылка -->
+                    <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <button class="search-button" aria-label="Поиск"><i class="icon-search"></i></button>
+                <a href="#" class="cart-button" aria-label="Корзина"><i class="icon-cart"></i> <span class="cart-count">0</span></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="catalog-hero">
+            <div class="container catalog-hero__container">
+                <h1 class="catalog-hero__title">Каталог украшений и дополнений</h1>
+                <p class="catalog-hero__description">Исследуйте наш полный ассортимент эксклюзивных решений для вашего сайта.</p>
+            </div>
+        </section>
+
+        <section class="product-list">
+            <div class="container product-list__container">
+                <div class="products-grid" id="catalog-products-grid">
+                    <!-- Здесь будут карточки товаров (загружаются из JS) -->
+                    <div class="loading-message">Загрузка товаров...</div> <!-- Сообщение о загрузке -->
+                    <!-- В случае ошибки можно добавить сообщение об ошибке здесь же -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <p class="footer__copyright">© 2024 RedStore. Все права защищены.</p>
+            <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Политика конфиденциальности</a></li>
+                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Условия использования</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="assets/js/catalog.js"></script> <!-- Подключаем отдельный JS файл для каталога -->
+</body>
+                                                                                            </html>
