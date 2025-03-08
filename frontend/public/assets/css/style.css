@@ -110,6 +110,407 @@ body {
     color: var(--color-accent-primary);
 }
 
+.nav__link--active {
+    color: var(--color-accent-primary); /* Выделение активной ссылки */
+}
+
+.header__actions {
+    display: flex;
+    align-items: center;
+}
+
+.search-button,
+.cart-button {
+    background: none;
+    border: none;
+    color: var(--color-text-primary);
+    font-size: 1.5rem;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.search-button:hover,
+.cart-button:hover {
+    color: var(--color-accent-primary);
+}
+
+.cart-count {
+    display: inline-block;
+    background-color: var(--color-accent-secondary);
+    color: var(--color-background);
+    font-size: 0.8rem;
+    padding: 2px 6px;
+    border-radius: 50%;
+    vertical-align: super;
+}
+
+
+/* Стили для секции Hero */
+.hero {
+    padding: 100px 0;
+}
+
+.hero__container {
+    display: flex;
+    align-items: center;
+    gap: 50px; /* Расстояние между контентом и изображением */
+}
+
+.hero__content {
+    flex: 1; /* Занимает доступное пространство */
+}
+
+.hero__title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero__description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #ccc; /* Более приглушенный цвет для описания */
+}
+
+.hero__image {
+    flex: 1;
+    max-width: 50%; /* Ограничиваем максимальную ширину изображения */
+}
+
+.hero__image img {
+    display: block; /* Убираем отступ снизу у inline-block элементов */
+    width: 100%;
+    border-radius: 10px; /* Скругление углов изображения */
+}
+
+
+/* Стили для секции Featured Categories */
+.featured-categories {
+    padding: 80px 0;
+}
+
+.categories-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Адаптивная сетка категорий */
+    gap: 30px;
+}
+
+.category-item {
+    text-align: center;
+}
+
+.category-link {
+    display: block;
+    text-decoration: none;
+    color: var(--color-text-primary);
+    transition: transform 0.3s ease;
+}
+
+.category-link:hover {
+    transform: scale(1.05); /* Небольшое увеличение при наведении */
+}
+
+.category-item img {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.category-name {
+    font-weight: bold;
+    display: block;
+}
+
+
+/* Стили для секции New Arrivals */
+.new-arrivals {
+    padding: 80px 0;
+    background-color: #1a1a1a; /* Чуть более светлый фон для секции новинок */
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Адаптивная сетка товаров */
+    gap: 30px;
+}
+
+.product-card {
+    background-color: #222; /* Карточки товаров немного светлее фона секции */
+    border-radius: 10px;
+    overflow: hidden; /* Обрезаем контент, выходящий за границы borderRadius */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Поднимаем карточку при наведении */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Добавляем тень при наведении */
+}
+
+.product-card__link {
+    display: block;
+    text-decoration: none;
+    color: var(--color-text-primary);
+    padding: 20px;
+}
+
+.product-card__image {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-card__title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-card__price {
+    font-size: 1rem;
+    color: var(--color-accent-primary);
+    font-weight: bold;
+}
+
+
+/* Стили для секции About Us */
+.about-us {
+    padding: 80px 0;
+}
+
+.about-us__container {
+    display: flex;
+    justify-content: center; /* Центрируем контент по горизонтали */
+    text-align: center; /* Центрируем текст внутри блока */
+}
+
+.about-us__content {
+    max-width: 800px; /* Ограничиваем ширину контента */
+}
+
+.about-us__text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+
+/* Стили для футера */
+.footer {
+    background-color: #1a1a1a;
+    padding: 30px 0;
+    border-top: 1px solid #222; /* Разделительная линия сверху */
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__copyright {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.footer__nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.footer__nav-item {
+    margin-left: 20px;
+}
+
+.footer__nav-link {
+    text-decoration: none;
+    color: #888;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer__nav-link:hover {
+    color: var(--color-text-primary);
+}
+
+
+/* Стили для страницы каталога */
+
+/* Стили для секции Catalog Hero */
+.catalog-hero {
+    padding: 80px 0 60px 0; /* Меньше отступа снизу, чем у main hero */
+    text-align: center;
+}
+
+.catalog-hero__container {
+    max-width: 800px; /* Ограничиваем ширину контента */
+    margin: 0 auto;
+}
+
+.catalog-hero__title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.catalog-hero__description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+
+/* Адаптивность (пока базово) */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero__container {
+        flex-direction: column; /* Вертикальное расположение на мобильных */
+        text-align: center; /* Центрируем текст на мобильных */
+        gap: 30px;
+    }
+
+    .hero__image {
+        max-width: 80%; /* Уменьшаем ширину изображения на мобильных */
+    }
+
+    .featured-categories {
+        padding: 60px 0;
+    }
+
+    .new-arrivals {
+        padding: 60px 0;
+    }
+
+    .about-us {
+        padding: 60px 0;
+    }
+
+    .footer {
+        padding: 20px 0;
+    }
+
+    .footer__container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer__nav-list {
+        margin-top: 15px;
+        justify-content: center;
+    }
+
+    .footer__nav-item {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .catalog-hero {
+        padding: 60px 0 40px 0; /* Меньше отступы на мобильных */
+    }
+
+    .catalog-hero__title {
+        font-size: 2.5rem;
+    }
+        }    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button--primary {
+    background-color: var(--color-accent-primary);
+    color: var(--color-background);
+}
+
+.button--primary:hover {
+    background-color: color-mix(in srgb, var(--color-accent-primary) 80%, black); /* Немного затемняем при наведении */
+}
+
+.button--secondary {
+    background-color: transparent;
+    color: var(--color-text-primary);
+    border: 2px solid var(--color-accent-secondary);
+}
+
+.button--secondary:hover {
+    background-color: var(--color-accent-secondary);
+    color: var(--color-background);
+}
+
+
+/* Стили для шапки */
+.header {
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный темный фон для шапки */
+    padding: 20px 0;
+    position: sticky; /* Фиксированная шапка при прокрутке */
+    top: 0;
+    z-index: 100; /* Чтобы шапка была поверх всего контента */
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-accent-primary);
+    text-decoration: none;
+}
+
+.nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav__item {
+    margin-left: 25px;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: var(--color-text-primary);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav__link:hover {
+    color: var(--color-accent-primary);
+}
+
 .header__actions {
     display: flex;
     align-items: center;
