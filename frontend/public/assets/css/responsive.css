@@ -1,0 +1,73 @@
+/* Адаптивность (пока базово) */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero__container {
+        flex-direction: column; /* Вертикальное расположение на мобильных */
+        text-align: center; /* Центрируем текст на мобильных */
+        gap: 30px;
+    }
+
+    .hero__image {
+        max-width: 80%; /* Уменьшаем ширину изображения на мобильных */
+    }
+
+    .featured-categories {
+        padding: 60px 0;
+    }
+
+    .new-arrivals {
+        padding: 60px 0;
+    }
+
+    .about-us {
+        padding: 60px 0;
+    }
+
+    .footer {
+        padding: 20px 0;
+    }
+
+    .footer__container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer__nav-list {
+        margin-top: 15px;
+        justify-content: center;
+    }
+
+    .footer__nav-item {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .catalog-hero {
+        padding: 60px 0 40px 0; /* Меньше отступы на мобильных */
+    }
+
+    .catalog-hero__title {
+        font-size: 2.5rem;
+    }
+
+    .bits-balance {
+        margin-right: 10px; /* Меньше отступ на мобильных */
+    }
+
+    .donate-button {
+        margin-right: 10px; /* Меньше отступ на мобильных */
+    }
+}
