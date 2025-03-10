@@ -8,28 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const productImageInput = document.getElementById('product-image');
     const imagePreviewContainer = document.getElementById('image-preview-container');
 
-    // 1. Загрузка категорий в select
-    async function loadCategories() {
-        try {
-            const response = await fetch('/backend/api/categories.php');
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            const categoriesData = await response.json();
-            categoriesData.forEach(category => {
-                const option = document.createElement('option');
-                option.value = category.name; // Или category.id, если есть ID
-                option.textContent = category.name;
-                categorySelect.appendChild(option);
-            });
-        } catch (error) {
-            console.error('Ошибка загрузки категорий для формы:', error);
-            // Можно добавить сообщение об ошибке на страницу, если нужно
-        }
-    }
-
-    loadCategories();
-
 
     // 2. Включение/отключение полей акции
     promotionEnabledCheckbox.addEventListener('change', function() {
