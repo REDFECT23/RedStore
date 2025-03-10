@@ -1,0 +1,82 @@
+/* Стили для форм на странице создания товара */
+.create-product-section {
+    padding: 60px 0;
+}
+
+.create-product-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #1a1a1a; /* Фон формы */
+    border-radius: 10px;
+}
+
+.create-product-form .form-group {
+    margin-bottom: 25px;
+}
+
+.create-product-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: var(--color-text-primary);
+}
+
+.create-product-form input[type="text"],
+.create-product-form input[type="number"],
+.create-product-form input[type="url"],
+.create-product-form input[type="date"],
+.create-product-form input[type="file"],
+.create-product-form textarea,
+.create-product-form select {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 5px;
+    border: 1px solid #333; /* Граница полей ввода */
+    background-color: #222; /* Фон полей ввода */
+    color: var(--color-text-primary);
+    font-size: 1rem;
+    box-sizing: border-box; /* Важно для правильной ширины с padding и border */
+}
+
+.create-product-form textarea {
+    resize: vertical; /* Разрешаем вертикальное изменение размера textarea */
+}
+
+.create-product-form input[type="checkbox"] {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.promotion-fieldset {
+    border: 1px solid #444; /* Граница fieldset */
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.promotion-fieldset legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--color-text-primary);
+    padding: 0 10px;
+}
+
+.image-preview-container {
+    margin-top: 10px;
+    max-width: 300px;
+    max-height: 300px;
+    overflow: hidden; /* Чтобы изображение не выходило за границы контейнера */
+    border: 1px dashed #555; /* Пунктирная граница для контейнера превью */
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-preview-container img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Чтобы изображение помещалось в контейнер и сохраняло пропорции */
+}
