@@ -12,6 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             productsGrid.innerHTML = ''; // Очищаем контейнер от сообщения о загрузке и предыдущих товаров (если были ошибки)
 
+            if (loadingMessage) {
+                loadingMessage.remove(); // Убираем сообщение о загрузке после успешной загрузки
+            }
+
             if (productsData.length === 0) {
                 productsGrid.innerHTML = '<div class="empty-catalog">В каталоге пока нет товаров.</div>'; // Сообщение, если товаров нет
                 return;
@@ -24,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <a href="#" class="product-card__link">
                         <img src="frontend/public${product.image}" alt="${product.name}" class="product-card__image">
                         <h3 class="product-card__title">${product.name}</h3>
-                        <p class="product-card__price">${product.price}</p>
+                        <p class="product-card__price">${product.price} <span class="currency">битов</span></p>
                     </a>
                 `;
                 productsGrid.appendChild(productCard);
@@ -41,4 +45,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     loadProducts();
+
+    // Обработчик для кнопки "Донат" на странице каталога
+    const donateButton = document.querySelector('.donate-button');
+    donateButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        alert('Функция доната в разработке.  Здесь будет окно для доната.');
+    });
 });
