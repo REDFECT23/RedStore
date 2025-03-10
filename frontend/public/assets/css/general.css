@@ -1,0 +1,85 @@
+/* Общие стили и переменные */
+:root {
+    --color-background: #121212; /* Темный фон */
+    --color-text-primary: #f0f0f0; /* Основной текст */
+    --color-accent-primary: #64ffda; /* Яркий акцентный цвет (бирюзовый) - можно заменить на другой неоновый цвет */
+    --color-accent-secondary: #ff6f00; /* Второй акцентный цвет (оранжевый) - можно заменить на другой неоновый цвет */
+    --font-family-primary: 'Arial', sans-serif; /* Основной шрифт */
+    --container-width: 1200px;
+}
+
+body {
+    font-family: var(--font-family-primary);
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+    text-transform: uppercase; /* Можно добавить, чтобы было в стиле cyberpunk.net */
+    letter-spacing: 2px; /* Можно добавить, чтобы было в стиле cyberpunk.net */
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button--primary {
+    background-color: var(--color-accent-primary);
+    color: var(--color-background);
+}
+
+.button--primary:hover {
+    background-color: color-mix(in srgb, var(--color-accent-primary) 80%, black); /* Немного затемняем при наведении */
+}
+
+.button--secondary {
+    background-color: transparent;
+    color: var(--color-text-primary);
+    border: 2px solid var(--color-accent-secondary);
+}
+
+.button--secondary:hover {
+    background-color: var(--color-accent-secondary);
+    color: var(--color-background);
+}
+
+.currency {
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: #aaa; /* Менее яркий цвет для обозначения валюты */
+    margin-left: 3px;
+}
+
+.loading-message,
+.error-message,
+.empty-catalog {
+    text-align: center;
+    padding: 20px;
+    color: #ccc;
+}
+
+.error-message {
+    color: var(--color-accent-secondary);
+}
