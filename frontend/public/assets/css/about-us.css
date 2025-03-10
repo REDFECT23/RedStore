@@ -1,0 +1,21 @@
+/* Стили для секции About Us */
+.about-us {
+    padding: 80px 0;
+}
+
+.about-us__container {
+    display: flex;
+    justify-content: center; /* Центрируем контент по горизонтали */
+    text-align: center; /* Центрируем текст внутри блока */
+}
+
+.about-us__content {
+    max-width: 800px; /* Ограничиваем ширину контента */
+}
+
+.about-us__text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #ccc;
+    margin-bottom: 30px;
+}
