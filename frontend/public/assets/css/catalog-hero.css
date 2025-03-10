@@ -1,0 +1,25 @@
+/* Стили для страницы каталога */
+
+/* Стили для секции Catalog Hero */
+.catalog-hero {
+    padding: 80px 0 60px 0; /* Меньше отступа снизу, чем у main hero */
+    text-align: center;
+}
+
+.catalog-hero__container {
+    max-width: 800px; /* Ограничиваем ширину контента */
+    margin: 0 auto;
+}
+
+.catalog-hero__title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.catalog-hero__description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ccc;
+}
