@@ -21,6 +21,8 @@
                 </ul>
             </nav>
             <div class="header__actions">
+                <span class="bits-balance">Баланс: <span id="user-bits">0</span> битов</span> <!-- Placeholder баланса -->
+                <button class="donate-button button button--secondary">Донат</button> <!-- Кнопка Донат -->
                 <button class="search-button" aria-label="Поиск"><i class="icon-search"></i></button> <!-- Иконка поиска (добавим позже или используем SVG) -->
                 <a href="#" class="cart-button" aria-label="Корзина"><i class="icon-cart"></i> <span class="cart-count">0</span></a> <!-- Иконка корзины (добавим позже или используем SVG) -->
             </div>
@@ -35,6 +37,57 @@
                     <p class="hero__description">Эксклюзивные дополнения и украшения, которые подчеркнут индивидуальность вашего онлайн-проекта.</p>
                     <a href="/catalog.html" class="button button--primary">Смотреть каталог</a>
                 </div>
+                <div class="hero__image">
+                    <img src="assets/img/hero-placeholder.png" alt="Placeholder Hero Image"> <!-- Замените на подходящее изображение -->
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-categories">
+            <div class="container featured-categories__container">
+                <h2 class="section-title">Популярные категории</h2>
+                <ul class="categories-list">
+                    <!-- Категории будут загружены из JS -->
+                </ul>
+            </div>
+        </section>
+
+        <section class="new-arrivals">
+            <div class="container new-arrivals__container">
+                <h2 class="section-title">Новинки</h2>
+                <div class="products-grid" id="homepage-products-grid"> <!-- Добавил id для JS -->
+                    <!-- Товары будут загружены из JS -->
+                    <div class="loading-message">Загрузка новинок...</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-us">
+            <div class="container about-us__container">
+                <div class="about-us__content">
+                    <h2 class="section-title">О RedStore</h2>
+                    <p class="about-us__text">RedStore - это платформа, созданная для того, чтобы помочь владельцам сайтов сделать их проекты более привлекательными и функциональными. Мы предлагаем широкий выбор украшений и дополнений, от стильных виджетов до эксклюзивных иконок и шаблонов. Наша цель - предоставить вам инструменты, которые помогут вашему сайту выделиться и привлечь больше внимания.</p>
+                    <a href="#" class="button button--secondary">Узнать больше</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <p class="footer__copyright">© 2024 RedStore. Все права защищены.</p>
+            <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Политика конфиденциальности</a></li>
+                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Условия использования</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>                </div>
                 <div class="hero__image">
                     <img src="assets/img/hero-placeholder.png" alt="Placeholder Hero Image"> <!-- Замените на подходящее изображение -->
                 </div>
