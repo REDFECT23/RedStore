@@ -1,0 +1,94 @@
+/* Стили для шапки */
+.header {
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный темный фон для шапки */
+    padding: 20px 0;
+    position: sticky; /* Фиксированная шапка при прокрутке */
+    top: 0;
+    z-index: 100; /* Чтобы шапка была поверх всего контента */
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-accent-primary);
+    text-decoration: none;
+}
+
+.nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav__item {
+    margin-left: 25px;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: var(--color-text-primary);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav__link:hover {
+    color: var(--color-accent-primary);
+}
+
+.nav__link--active {
+    color: var(--color-accent-primary); /* Выделение активной ссылки */
+}
+
+.header__actions {
+    display: flex;
+    align-items: center;
+}
+
+.bits-balance {
+    color: var(--color-text-primary);
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.bits-balance span {
+    color: var(--color-accent-secondary); /* Выделяем количество битов акцентным цветом */
+}
+
+.donate-button {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    margin-right: 20px;
+}
+
+.search-button,
+.cart-button {
+    background: none;
+    border: none;
+    color: var(--color-text-primary);
+    font-size: 1.5rem;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.search-button:hover,
+.cart-button:hover {
+    color: var(--color-accent-primary);
+}
+
+.cart-count {
+    display: inline-block;
+    background-color: var(--color-accent-secondary);
+    color: var(--color-background);
+    font-size: 0.8rem;
+    padding: 2px 6px;
+    border-radius: 50%;
+    vertical-align: super;
+}
