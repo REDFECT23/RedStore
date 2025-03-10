@@ -1,0 +1,39 @@
+/* Стили для секции Hero */
+.hero {
+    padding: 100px 0;
+}
+
+.hero__container {
+    display: flex;
+    align-items: center;
+    gap: 50px; /* Расстояние между контентом и изображением */
+}
+
+.hero__content {
+    flex: 1; /* Занимает доступное пространство */
+}
+
+.hero__title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero__description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #ccc; /* Более приглушенный цвет для описания */
+}
+
+.hero__image {
+    flex: 1;
+    max-width: 50%; /* Ограничиваем максимальную ширину изображения */
+}
+
+.hero__image img {
+    display: block; /* Убираем отступ снизу у inline-block элементов */
+    width: 100%;
+    border-radius: 10px; /* Скругление углов изображения */
+}
